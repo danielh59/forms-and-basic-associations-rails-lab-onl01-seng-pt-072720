@@ -5,8 +5,8 @@
   <%= f.text_field :title %>
   <br />
 
-    <%= fields_for :artist do |artist_f| %>
-      <%= artist_f.label :song[:artist] %>
+    <%= fields_for :song[:artist] do |artist_f| %>
+      <%= artist_f.label :artist %>
       <%= artist_f.text_field :name %>
       <br />
     <% end %>
