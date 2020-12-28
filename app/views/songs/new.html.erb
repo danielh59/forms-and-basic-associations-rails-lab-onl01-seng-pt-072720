@@ -4,7 +4,7 @@
   <%= f.label :title %>
   <%= f.text_field :title %>
   <br />
-  
+
     <%= fields_for :artist do |artist_f| %>
       <%= artist_f.label :artist %>
       <%= artist_f.text_field :name %>
@@ -12,5 +12,3 @@
     <% end %>
   <%= f.submit %>
 <% end %>
-
-
